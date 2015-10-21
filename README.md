@@ -17,7 +17,7 @@ Make sure you have installed everything from the *check list*.
 1. Open Matlab R2013b.
 2. Write the following command in the *Command Window* `>> mex -setup`, once entered the following is the output
 
-<pre>
+<pre style="color:red">
 Welcome to mex -setup.  This utility will help you set up  
 a default compiler.  For a list of supported compilers, see  
 http://www.mathworks.com/support/compilers/R2013b/win64.html
