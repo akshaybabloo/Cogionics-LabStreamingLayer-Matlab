@@ -6,6 +6,7 @@ Using Cogionics Matlab code.
 ## Check list
 * Visual Studio 2010 Premium with SP1 (Matlab R2013b)
 * Visual Studio Professional 2012 (Matlab R2014)
+* Matlab R2013b or R2014.
 * Cogionics Acquisition Software
 
 ## Installing Visual C++ via MEX installer
@@ -14,10 +15,10 @@ There are different ways to install Visual C++ in Matlab, the following seems to
 Make sure you have installed everything from the *check list*.
 
 ### Matlab R2013b
-1. Open Matlab R2013b.
-2. Write the following command in the *Command Window* `>> mex -setup`, once entered the following is the output
+* Open Matlab R2013b.
+* Write the following command in the *Command Window* `>> mex -setup`, once entered the following is the output
 
-<pre style="color:red">
+<pre>
 Welcome to mex -setup.  This utility will help you set up  
 a default compiler.  For a list of supported compilers, see  
 http://www.mathworks.com/support/compilers/R2013b/win64.html
@@ -27,7 +28,7 @@ Please choose your compiler for building MEX-files:
 Would you like mex to locate installed compilers [y]/n?
 </pre>
 
-3. Enter `y` to continue. If all the softwares are installed (Visual Studio) the following is the output
+* Enter `y` to continue. If all the softwares are installed (Visual Studio) the following is the output
 
 <pre>
 Select a compiler:
@@ -39,7 +40,7 @@ Select a compiler:
 Compiler:
 </pre>
 
-4. Doesn't matter which compiler you choose, I prefer `[2]`. Enter `2` to proceed. The following is the output
+* Doesn't matter which compiler you choose, I prefer `[2]`. Enter `2` to proceed. The following is the output
 
 <pre>
 Please verify your choices:
@@ -50,7 +51,7 @@ Location: C:\Program Files (x86)\Microsoft Visual Studio 10.0
 Are these correct [y]/n?
 </pre>
 
-5. Enter `y` to proceed. The following is the output
+* Enter `y` to proceed. The following is the output
 
 <pre>
 ***************************************************************************
@@ -77,4 +78,32 @@ Done . . .
 **************************************************************************
  </pre>
 
- 6. instillation is done.
+* instillation is done.
+
+### Matlab R2014
+* Please follow the same steps from [Matlab R2013b](#matlab-r2013b)
+* If a compiler is already installed the following ill be the output:
+
+<pre>
+MEX configured to use 'Microsoft Visual C++ 2012 (C)' for C language compilation.
+Warning: The MATLAB C and Fortran API has changed to support MATLAB
+	 variables with more than 2^32-1 elements. In the near future
+	 you will be required to update your code to utilize the
+	 new API. You can find more information about this at:
+	 http://www.mathworks.com/help/matlab/matlab_external/upgrading-mex-files-to-use-64-bit-api.html.
+
+To choose a different C compiler, select one from the following:
+Microsoft Visual C++ 2010 (C)  mex -setup:'C:\Program Files\MATLAB\R2014b\bin\win64\mexopts\msvc2010.xml' C
+Microsoft Visual C++ 2012 (C)  mex -setup:C:\Users\em8273\AppData\Roaming\MathWorks\MATLAB\R2014b\mex_C_win64.xml C
+Microsoft Visual C++ 2013 Professional (C)  mex -setup:'C:\Program Files\MATLAB\R2014b\bin\win64\mexopts\msvc2013.xml' C
+
+To choose a different language, select one from the following:
+ mex -setup C++
+ mex -setup FORTRAN
+ </pre>
+
+ ## Running Cogionics software with LabStreamingLayer
+
+ Click on "**StartLabStreaming Layer**" button on the software as shown in the figure below.
+
+ 
