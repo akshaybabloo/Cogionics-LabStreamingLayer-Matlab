@@ -117,7 +117,7 @@ To choose a different language, select one from the following:
 
  ![Cogionics Acquisition Software](https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/raw/master/Screenshot/cog-sw.png)
 
-## Running the Matlab code
+## Matlab code
 
 ### Structure
 
@@ -146,3 +146,22 @@ Cogionics-LabStreamingLayer-Matlab
 |       +-- *.h (C/C++ header)
 + README.md
 </pre>
+
+### Running the code
+
+* Go to [examples](https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/tree/master/src/examples) folder and open `ReceiveData.m`.
+* Make sure your Cogionics headset is connected, Cogionics Acquisition software is running and LabStreaming Layer started.
+* Run `ReceiveData.m`, the following will be the output:
+
+<pre>
+Loading the library...
+Opening an inlet...
+Now receiving data...
+19485.773438	19741.779297	6674.514648	6623.163574	20691.462891	6199.680176	20167.275391	20685.126953	6924.809082	6192.976563	6675.769043	20267.355469	20231.251953	20662.804688	7397.237793	7199.717285	19946.298828	18647.792969	19228.863281	6209.264160	6137.953613	18366.271484	20491.544922	21065.767578	6444.163086	20681.554688	20029.085938	20010.667969	5983.314941	6012.062012	6325.457031	6124.861816	4987.716797	6074.905273	5197.524902	1.000000	0.000000	11236.27503
+19708.207031	19863.417969	6886.106934	6952.495605	20584.455078	6310.559082	19912.994141	20138.935547	6726.181152	6194.583984	6666.457520	20144.380859	19848.751953	20016.361328	6850.826660	6961.275879	20171.779297	18535.423828	19087.242188	6016.764648	5894.255859	17926.568359	20411.574219	21206.007813	6374.832031	20544.937500	19862.681641	19956.236328	6122.464355	6436.485840	6369.718750	6173.652832	4987.716797	6074.905273	5197.524902	2.000000	0.000000	11236.27516
+.
+.
+.
+</pre>
+
+* The output you see is the real time data from the headset, each line is 1 Hz.
