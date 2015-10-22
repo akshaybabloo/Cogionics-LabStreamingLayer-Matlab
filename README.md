@@ -1,7 +1,16 @@
 # Cogionics LabStreamingLayer Matlab
 Using Cogionics Matlab code.
 
-> Note: This instillation is for Windows 64-bit.
+> Note-1: This instillation is for Windows 64-bit.
+
+> Note-2: `*.mexw64` files provided in this code were compiled on my system and should work on all 64-bit windows version.
+
+## Compiling `mex` files for 32-bit system
+If you are using 32-bit Windows system to run the code, you would have to convert `*.c` files into 32-bit MEX files. you would need a 32-bit Matlab for this. Enter the following code for the conversion.
+
+`mex path-to-c-file/c-file.c`
+
+This will create `c-file.mexw32` on the parent path.
 
 ## Check list
 * Visual Studio 2010 Premium with SP1 (Matlab R2013b)
@@ -102,8 +111,38 @@ To choose a different language, select one from the following:
  mex -setup FORTRAN
  </pre>
 
- ## Running Cogionics software with LabStreamingLayer
+## Running Cogionics software with LabStreamingLayer
 
- Click on "**StartLabStreaming Layer**" button on the software as shown in the figure below.
+ Click on "**StartLabStreaming Layer**" button on the software as shown in the figure below, so that the Matlab can take the real time data from the Cogionics headset.
 
- 
+ ![Cogionics Acquisition Software](https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/raw/master/Screenshot/cog-sw.png)
+
+## Running the Matlab code
+
+### Structure
+
+<pre>
+Cogionics-LabStreamingLayer-Matlab
+|
++-- .git
++-- Screenshot
+|   |
+|   `- *.png
++-- src
+|   |
+|   +-- *.m (Matlab code)
+|   +-- bin
+|   |   |
+|   |   +-- *.dll (Windows)
+|   |   +-- *.dylib (Mac)
+|   |   `-- *.so (Linux)
+|   +-- examples
+|   |   |
+|   |   `-- *.m (Matlab code)
+|   `-- mex
+|       |
+|       +-- *.mexw64 (Compiled Matlab MEX)
+|       +-- *.c (C code)
+|       +-- *.h (C/C++ header)
++ README.md
+</pre>
