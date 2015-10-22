@@ -90,25 +90,10 @@ Done . . .
 * instillation is done.
 
 
-
-
-
-
-
-
-
 ### Matlab R2014
-
-
-
-
-
 
 * Please follow the same steps from [Matlab R2013b](#matlab-r2013b)
 * If a compiler is already installed the following ill be the output:
-
-
-
 
 <pre>
 MEX configured to use 'Microsoft Visual C++ 2012 (C)' for C language compilation.
@@ -128,12 +113,10 @@ To choose a different language, select one from the following:
  mex -setup FORTRAN
  </pre>
 
-<br/>
 ## Running Cogionics software with LabStreamingLayer
 
 Click on "**StartLabStreaming Layer**" button on the software as shown in the figure below, so that the Matlab can take the real time data from the Cogionics headset.
 
-![Cogionics Acquisition Software](https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/raw/master/Screenshot/cog-sw.png)
 
 ## Matlab code
 
