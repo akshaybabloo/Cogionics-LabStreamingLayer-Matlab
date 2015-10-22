@@ -117,6 +117,7 @@ To choose a different language, select one from the following:
 
 Click on "**StartLabStreaming Layer**" button on the software as shown in the figure below, so that the Matlab can take the real time data from the Cogionics headset.
 
+![Cogionics Acquisition Software](https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/raw/master/Screenshot/cog-sw.png)
 
 ## Matlab code
 
