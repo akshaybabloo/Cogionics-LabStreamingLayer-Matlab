@@ -16,7 +16,7 @@ disp('Now receiving data...');
 while true
     % get data from the inlet
     [vec,ts] = inlet.pull_sample();
-    % and display it
-    fprintf('%.2f\t',vec);
+%     fprintf('%.2f\t',vec);
+    fprintf('%f\t',vec);
     fprintf('%.5f\n',ts);
 end
