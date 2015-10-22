@@ -109,7 +109,7 @@ Microsoft Visual C++ 2013 Professional (C)  mex -setup:'C:\Program Files\MATLAB\
 To choose a different language, select one from the following:
  mex -setup C++
  mex -setup FORTRAN
- </pre>
+</pre>
 
 ## Running Cogionics software with LabStreamingLayer
 
