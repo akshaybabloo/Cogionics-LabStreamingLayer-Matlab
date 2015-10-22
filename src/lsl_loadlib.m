@@ -58,7 +58,6 @@ else
     end
 
     dllpath = [binarypath filesep 'liblsl' bitness debug ext];
-    disp(dllpath)
 
     if ~exist(dllpath,'file')
         error(['Apparently the file "' dllpath '" is missing on your computer. Cannot load the lab streaming layer.']); end
