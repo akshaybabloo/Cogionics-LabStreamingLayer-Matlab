@@ -108,7 +108,7 @@ To choose a different language, select one from the following:
  mex -setup FORTRAN
  </pre>
 <h2><a href="#running-cogionics-software-with-labstreaminglayer" name="running-cogionics-software-with-labstreaminglayer"></a>Running Cogionics software with LabStreamingLayer</h2>
-<p>Click on "**StartLabStreaming Layer**" button on the software as shown in the figure below, so that the Matlab can take the real time data from the Cogionics headset.</p>
+<p>Click on "<b>StartLabStreaming Layer</b>" button on the software as shown in the figure below, so that the Matlab can take the real time data from the Cogionics headset.</p>
 <p><img src="https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/raw/master/Screenshot/cog-sw.png" alt="Cogionics Acquisition Software" /></p>
 <h2><a href="#matlab-code" name="matlab-code"></a>Matlab code</h2>
 <h3><a href="#structure" name="structure"></a>Structure</h3>
