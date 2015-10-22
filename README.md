@@ -1,44 +1,40 @@
-# Cogionics LabStreamingLayer Matlab
-Using Cogionics Matlab code.
-
-> Note-1: This instillation is for Windows 64-bit.
-
-> Note-2: `*.mexw64` files provided in this code were compiled on my system and should work on all 64-bit windows version.
-
-## Compiling `mex` files for 32-bit system
-If you are using 32-bit Windows system to run the code, you would have to convert `*.c` files into 32-bit MEX files. you would need a 32-bit Matlab for this. Enter the following code for the conversion.
-
-`mex path-to-c-file/c-file.c`
-
-This will create `c-file.mexw32` on the parent path.
-
-## Check list
-* Visual Studio 2010 Premium with SP1 (Matlab R2013b)
-* Visual Studio Professional 2012 (Matlab R2014)
-* Matlab R2013b or R2014.
-* Cogionics Acquisition Software
-
-## Installing Visual C++ via MEX installer
-There are different ways to install Visual C++ in Matlab, the following seems to be easy.
-
-Make sure you have installed everything from the *check list*.
-
-### Matlab R2013b
-* Open Matlab R2013b.
-* Write the following command in the *Command Window* `>> mex -setup`, once entered the following is the output
-
+<h1><a href="#cogionics-labstreaminglayer-matlab" name="cogionics-labstreaminglayer-matlab"></a>Cogionics LabStreamingLayer Matlab</h1>
+<p>Using Cogionics Matlab code.</p>
+<blockquote>
+  <p>Note-1: This instillation is for Windows 64-bit.</p>
+  <p>Note-2: <code>*.mexw64</code> files provided in this code were compiled on my system and should work on all 64-bit windows version.</p>
+</blockquote>
+<h2><a href="#compiling-files-for-32-bit-system" name="compiling-files-for-32-bit-system"></a>Compiling <code>mex</code> files for 32-bit system</h2>
+<p>If you are using 32-bit Windows system to run the code, you would have to convert <code>*.c</code> files into 32-bit MEX files. you would need a 32-bit Matlab for this. Enter the following code for the conversion.</p>
+<p><code>mex path-to-c-file/c-file.c</code></p>
+<p>This will create <code>c-file.mexw32</code> on the parent path.</p>
+<h2><a href="#check-list" name="check-list"></a>Check list</h2>
+<ul>
+  <li>Visual Studio 2010 Premium with SP1 (Matlab R2013b)</li>
+  <li>Visual Studio Professional 2012 (Matlab R2014)</li>
+  <li>Matlab R2013b or R2014.</li>
+  <li>Cogionics Acquisition Software</li>
+</ul>
+<h2><a href="#installing-visual-c-via-mex-installer" name="installing-visual-c-via-mex-installer"></a>Installing Visual C++ via MEX installer</h2>
+<p>There are different ways to install Visual C++ in Matlab, the following seems to be easy.</p>
+<p>Make sure you have installed everything from the <em>check list</em>.</p>
+<h3><a href="#matlab-r2013b" name="matlab-r2013b"></a>Matlab R2013b</h3>
+<ul>
+  <li>Open Matlab R2013b.</li>
+  <li>Write the following command in the <em>Command Window</em> <code>&gt;&gt; mex -setup</code>, once entered the following is the output</li>
+</ul>
 <pre>
-Welcome to mex -setup.  This utility will help you set up  
-a default compiler.  For a list of supported compilers, see  
+Welcome to mex -setup.  This utility will help you set up
+a default compiler.  For a list of supported compilers, see
 http://www.mathworks.com/support/compilers/R2013b/win64.html
 
 Please choose your compiler for building MEX-files:
 
 Would you like mex to locate installed compilers [y]/n?
 </pre>
-
-* Enter `y` to continue. If all the softwares are installed (Visual Studio) the following is the output
-
+<ul>
+  <li>Enter <code>y</code> to continue. If all the softwares are installed (Visual Studio) the following is the output</li>
+</ul>
 <pre>
 Select a compiler:
 [1] Microsoft Visual C++ 2012 in C:\Program Files (x86)\Microsoft Visual Studio 11.0
@@ -48,24 +44,24 @@ Select a compiler:
 
 Compiler:
 </pre>
-
-* Doesn't matter which compiler you choose, I prefer `[2]`. Enter `2` to proceed. The following is the output
-
+<ul>
+  <li>Doesn't matter which compiler you choose, I prefer <code>[2]</code>. Enter <code>2</code> to proceed. The following is the output</li>
+</ul>
 <pre>
 Please verify your choices:
 
-Compiler: Microsoft Visual C++ 2010  
+Compiler: Microsoft Visual C++ 2010
 Location: C:\Program Files (x86)\Microsoft Visual Studio 10.0
 
 Are these correct [y]/n?
 </pre>
-
-* Enter `y` to proceed. The following is the output
-
+<ul>
+  <li>Enter <code>y</code> to proceed. The following is the output</li>
+</ul>
 <pre>
 ***************************************************************************
   Warning: MEX-files generated using Microsoft Visual C++ 2010 require
-           that Microsoft Visual Studio 2010 run-time libraries be  
+           that Microsoft Visual Studio 2010 run-time libraries be
            available on the computer they are run on.
            If you plan to redistribute your MEX-files to other MATLAB
            users, be sure that they have the run-time libraries.
@@ -82,19 +78,18 @@ Done . . .
            variables with more than 2^32-1 elements.  In the near future
            you will be required to update your code to utilize the new
            API. You can find more information about this at:
-           http://www.mathworks.com/help/matlab/matlab_external/upgrading-mex-files-to-use-64-bit-api.html  
+           http://www.mathworks.com/help/matlab/matlab_external/upgrading-mex-files-to-use-64-bit-api.html
            Building with the -largeArrayDims option enables the new API.
 **************************************************************************
  </pre>
-
-* instillation is done.
-
-
-### Matlab R2014
-
-* Please follow the same steps from [Matlab R2013b](#matlab-r2013b)
-* If a compiler is already installed the following ill be the output:
-
+<ul>
+  <li>instillation is done.</li>
+</ul>
+<h3><a href="#matlab-r2014" name="matlab-r2014"></a>Matlab R2014</h3>
+<ul>
+  <li>Please follow the same steps from <a href="#matlab-r2013b">Matlab R2013b</a></li>
+  <li>If a compiler is already installed the following ill be the output:</li>
+</ul>
 <pre>
 MEX configured to use 'Microsoft Visual C++ 2012 (C)' for C language compilation.
 Warning: The MATLAB C and Fortran API has changed to support MATLAB
@@ -112,17 +107,11 @@ To choose a different language, select one from the following:
  mex -setup C++
  mex -setup FORTRAN
  </pre>
-
-## Running Cogionics software with LabStreamingLayer
-
-Click on "**StartLabStreaming Layer**" button on the software as shown in the figure below, so that the Matlab can take the real time data from the Cogionics headset.
-
-![Cogionics Acquisition Software](https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/raw/master/Screenshot/cog-sw.png)
-
-## Matlab code
-
-### Structure
-
+<h2><a href="#running-cogionics-software-with-labstreaminglayer" name="running-cogionics-software-with-labstreaminglayer"></a>Running Cogionics software with LabStreamingLayer</h2>
+<p>Click on "**StartLabStreaming Layer**" button on the software as shown in the figure below, so that the Matlab can take the real time data from the Cogionics headset.</p>
+<p><img src="https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/raw/master/Screenshot/cog-sw.png" alt="Cogionics Acquisition Software" /></p>
+<h2><a href="#matlab-code" name="matlab-code"></a>Matlab code</h2>
+<h3><a href="#structure" name="structure"></a>Structure</h3>
 <pre>
 Cogionics-LabStreamingLayer-Matlab
 |
@@ -148,13 +137,12 @@ Cogionics-LabStreamingLayer-Matlab
 |       +-- *.h (C/C++ header)
 + README.md
 </pre>
-
-### Running the code
-
-* Go to [examples](https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/tree/master/src/examples) folder and open `ReceiveData.m`.
-* Make sure your Cogionics headset is connected, Cogionics Acquisition software is running and LabStreaming Layer started.
-* Run `ReceiveData.m`, the following will be the output:
-
+<h3><a href="#running-the-code" name="running-the-code"></a>Running the code</h3>
+<ul>
+  <li>Go to <a href="https://github.com/akshaybabloo/Cogionics-LabStreamingLayer-Matlab/tree/master/src/examples">examples</a> folder and open <code>ReceiveData.m</code>.</li>
+  <li>Make sure your Cogionics headset is connected, Cogionics Acquisition software is running and LabStreaming Layer started.</li>
+  <li>Run <code>ReceiveData.m</code>, the following will be the output:</li>
+</ul>
 <pre>
 Loading the library...
 Opening an inlet...
@@ -165,5 +153,6 @@ Now receiving data...
 .
 .
 </pre>
-
-* The output you see is the real time data from the headset, each line is 1 Hz.
+<ul>
+  <li>The output you see is the real time data from the headset, each line is 1 Hz.</li>
+</ul>
