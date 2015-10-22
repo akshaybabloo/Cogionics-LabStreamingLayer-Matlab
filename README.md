@@ -68,7 +68,7 @@ Are these correct [y]/n?
 ***************************************************************************
 
 
-Trying to update options file: C:\Users\em8273\AppData\Roaming\MathWorks\MATLAB\R2013b\mexopts.bat
+Trying to update options file: C:\Users\{user}\AppData\Roaming\MathWorks\MATLAB\R2013b\mexopts.bat
 From template:              C:\PROGRA~1\MATLAB\R2013\bin\win64\mexopts\msvc100opts.bat
 
 Done . . .
@@ -100,7 +100,7 @@ Warning: The MATLAB C and Fortran API has changed to support MATLAB
 
 To choose a different C compiler, select one from the following:
 Microsoft Visual C++ 2010 (C)  mex -setup:'C:\Program Files\MATLAB\R2014b\bin\win64\mexopts\msvc2010.xml' C
-Microsoft Visual C++ 2012 (C)  mex -setup:C:\Users\em8273\AppData\Roaming\MathWorks\MATLAB\R2014b\mex_C_win64.xml C
+Microsoft Visual C++ 2012 (C)  mex -setup:C:\Users\{user}\AppData\Roaming\MathWorks\MATLAB\R2014b\mex_C_win64.xml C
 Microsoft Visual C++ 2013 Professional (C)  mex -setup:'C:\Program Files\MATLAB\R2014b\bin\win64\mexopts\msvc2013.xml' C
 
 To choose a different language, select one from the following:
