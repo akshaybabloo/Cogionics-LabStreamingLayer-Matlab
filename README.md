@@ -13,7 +13,7 @@
   <li>Visual Studio 2010 Premium with SP1 (Matlab R2013b)</li>
   <li>Visual Studio Professional 2012 (Matlab R2014)</li>
   <li>Matlab R2013b or R2014.</li>
-  <li>Cogionics Acquisition Software</li>
+  <li>Cogionics Acquisition Software (<a href="http://cognionics.com/wiki/pmwiki.php/Main/DataAcquisitionSoftware">Download</a>)</li>
 </ul>
 <h2><a href="#installing-visual-c-via-mex-installer" name="installing-visual-c-via-mex-installer"></a>Installing Visual C++ via MEX installer</h2>
 <p>There are different ways to install Visual C++ in Matlab, the following seems to be easy.</p>
