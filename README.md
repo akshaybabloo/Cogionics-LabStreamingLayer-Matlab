@@ -156,3 +156,26 @@ Now receiving data...
 <ul>
   <li>The output you see is the real time data from the headset, each line is 1 Hz.</li>
 </ul>
+
+### Chunk size
+
+To change the chunk size (Sample rate) of recording, do the following:
+
+1. Open `lsl_inlet.m`.
+2. Go to line `43` and edit `if ~exist('chunksize','var') || isempty(chunksize) chunksize = 0; end` to `if ~exist('chunksize','var') || isempty(chunksize) chunksize = 500; end`, make sure 500 is your sample rate in the Cognionics Acquisition software.
+3. Then open `RecieveDataInChunks.m` and replace the `while` loop with the following code:
+```
+while true
+    % get chunk from the inlet
+    [chunk,stamps] = inlet.pull_chunk();
+    t = zeros(1,37);
+    for s=1:length(stamps)
+        t(s,:) = chunk(:,s);
+    end
+    pause(1);
+    [a,b]=size(t);
+    if a == 500
+        disp(t)
+    end
+end
+```
