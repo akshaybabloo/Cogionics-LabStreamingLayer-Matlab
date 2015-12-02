@@ -14,6 +14,7 @@
   <li>Visual Studio Professional 2012 (Matlab R2014)</li>
   <li>Matlab R2013b or R2014.</li>
   <li>Cogionics Acquisition Software (<a href="http://cognionics.com/wiki/pmwiki.php/Main/DataAcquisitionSoftware">Download</a>)</li>
+  <li>FTDI Drivers (<a href="http://www.ftdichip.com/Drivers/D2XX.htm">Download</a>)</li>
 </ul>
 <h2><a href="#installing-visual-c-via-mex-installer" name="installing-visual-c-via-mex-installer"></a>Installing Visual C++ via MEX installer</h2>
 <p>There are different ways to install Visual C++ in Matlab, the following seems to be easy.</p>
